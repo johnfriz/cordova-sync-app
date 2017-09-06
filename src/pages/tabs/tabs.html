@@ -1,0 +1,4 @@
+<ion-tabs>
+  <ion-tab [root]="listTab" tabIcon="ios-list"></ion-tab>
+  <ion-tab [root]="accountTab" tabIcon="ios-settings" *ngIf="authEnabled()"></ion-tab>
+</ion-tabs>

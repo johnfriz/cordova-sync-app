@@ -1,0 +1,19 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{pageTitle}}</ion-title>
+    <ion-buttons end>
+			<button ion-button icon-only (click)="close()">
+				<ion-icon item-right name="close"></ion-icon>
+			</button>
+		</ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-textarea [(ngModel)]="listItem.data.name" placeholder="Enter your shopping item">
+  </ion-textarea>
+  <button ion-button full (click)="createItem()">Submit</button>
+</ion-content>

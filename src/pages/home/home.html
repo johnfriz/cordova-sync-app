@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      <img height="30px" src="http://feedhenry.org/assets/images/logo.svg"/>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+<ion-list>
+  <ion-item-sliding *ngFor="let listItem of listItems" #item>
+    <ion-item (click)="showItem(listItem)">
+      <h2>{{listItem.data.name}}</h2>
+      <p>{{listItem.uid}}</p>
+    </ion-item>
+    <ion-item-options side="right">
+      <button ion-button color="danger" (click)="deleteItem(listItem)" >Delete</button>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+  <ion-fab right bottom (click)="showItem()">
+    <button ion-fab color="primary">
+      <ion-icon name="md-add"></ion-icon>
+    </button>
+  </ion-fab>
+</ion-content>

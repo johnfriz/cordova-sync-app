@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      <img height="30px" src="http://feedhenry.org/assets/images/logo.svg"/>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-list>
+      <ion-item-divider color="light">User Management</ion-item-divider>
+
+      <ion-item>
+        Account
+        <button ion-button clear item-end icon-left color="secondary" (click)="accountManagement()">
+          <ion-icon name="ios-build"></ion-icon>
+          Manage
+        </button>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Email Verified</ion-label>
+        <ion-toggle disabled color="secondary" checked="{{account.emailVerified}}"></ion-toggle>
+      </ion-item>
+
+      <ion-item>
+        <ion-label color="dark"> User Enabled</ion-label>
+        <ion-toggle disabled color="secondary" checked="{{account.enabled}}"></ion-toggle>
+      </ion-item>
+    </ion-list>
+
+    <ion-item-divider color="light">Credential Usage</ion-item-divider>
+    <ion-item *ngFor="let type of account.credentialTypes">
+    {{ type }}
+    <ion-icon name="key" color="secondary" item-end></ion-icon>
+    </ion-item>
+
+
+
+  <ion-fab right bottom (click)="logout()">
+    <button ion-fab color="primary"><ion-icon name="md-exit"></ion-icon></button>
+  </ion-fab>
+</ion-content>
