@@ -14,4 +14,4 @@ Currently, to run the app you require the FeedHenry Mobile Control Panel to be s
 ***This requirement will be removed soon***
 
 * Install dependencies - `npm i`
-* Run the app - `npm run serve`
+* Run the app - `npm run ionic:serve`

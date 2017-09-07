@@ -55,7 +55,6 @@ listItems: any;
       this.zone.run(() => {
         this.listItems = newListItems.reverse();
       })
-      console.log('list items are ', this.listItems);
     }, (err, datasetId) => {
       console.error('Error occurred during list ', err);
     })
