@@ -22,7 +22,7 @@ export class KeycloakService {
   */
   static init(keycloakConfig: any): Promise<any> {
     if (keycloakConfig) {
-      let keycloakAuth: any = Keycloak(keycloakConfig.config);
+      let keycloakAuth: any = Keycloak(keycloakConfig);
 
       return new Promise((resolve, reject) => {
         keycloakAuth.init({ onLoad: 'login-required', flow: 'implicit' }).success(() => {
