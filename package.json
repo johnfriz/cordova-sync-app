@@ -29,7 +29,7 @@
         "@types/request-promise": "^4.1.37",
         "bluebird": "^3.5.0",
         "cordova-android": "^6.2.3",
-        "cordova-ios": "^4.4.0",
+        "cordova-ios": "^4.5.0",
         "cordova-plugin-console": "^1.0.7",
         "cordova-plugin-device": "^1.1.6",
         "cordova-plugin-inappbrowser": "^1.7.1",
