@@ -1,5 +1,5 @@
 {
-  "host": "replaceme",
-  "appID": "replaceme",
-  "apiKey": "replaceme"
+  "host":"https://mcp-standalone-fourth.192.168.37.1.nip.io",
+  "appID":"myapp-1508244803",
+  "apiKey":"4247de32-6c90-4498-aa58-22cedeb11e83"
 }
